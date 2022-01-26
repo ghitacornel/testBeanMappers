@@ -3,7 +3,7 @@ package common.model.conversion;
 import lombok.Data;
 
 @Data
-public class TargetConversion {
+public class TargetTypeConversion {
 
     private Integer fieldInt1;
     private String fieldInt2;
