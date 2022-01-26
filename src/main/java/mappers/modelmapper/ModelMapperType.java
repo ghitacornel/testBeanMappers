@@ -3,6 +3,7 @@ package mappers.modelmapper;
 import common.mapper.Mapper;
 import common.model.conversion.SourceType;
 import common.model.conversion.TargetType;
+import org.modelmapper.Conditions;
 import org.modelmapper.ModelMapper;
 import org.modelmapper.convention.MatchingStrategies;
 
@@ -13,7 +14,7 @@ public class ModelMapperType implements Mapper<SourceType, TargetType> {
     public ModelMapperType() {
         mapper = new ModelMapper();
         mapper.getConfiguration().setMatchingStrategy(MatchingStrategies.STRICT);
-        mapper.getConfiguration().setSkipNullEnabled(false);
+        mapper.typeMap(SourceType.class, TargetType.class).addMappings(mapper -> mapper.when(Conditions.isNull()).skip(SourceType::getFieldStringIntNull, TargetType::setFieldStringIntNull));
     }
 
     @Override
