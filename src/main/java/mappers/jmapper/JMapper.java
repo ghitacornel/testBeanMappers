@@ -1,11 +1,11 @@
 package mappers.jmapper;
 
 import com.googlecode.jmapper.api.JMapperAPI;
-import common.converter.Converter;
+import common.mapper.Mapper;
 import common.model.SourceModel;
 import common.model.TargetModel;
 
-public class JMapper implements Converter<SourceModel, TargetModel> {
+public class JMapper implements Mapper<SourceModel, TargetModel> {
 
     com.googlecode.jmapper.JMapper<TargetModel, SourceModel> mapperToTarget;
 
@@ -17,7 +17,7 @@ public class JMapper implements Converter<SourceModel, TargetModel> {
     }
 
     @Override
-    public TargetModel convert(SourceModel sourceOrder) {
+    public TargetModel map(SourceModel sourceOrder) {
         return mapperToTarget.getDestination(sourceOrder);
     }
 

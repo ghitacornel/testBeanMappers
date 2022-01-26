@@ -1,11 +1,11 @@
 package mappers.modelmapper;
 
-import common.converter.Converter;
+import common.mapper.Mapper;
 import common.model.SourceModel;
 import common.model.TargetModel;
 import org.modelmapper.convention.MatchingStrategies;
 
-public class ModelMapper implements Converter<SourceModel,TargetModel> {
+public class ModelMapper implements Mapper<SourceModel,TargetModel> {
 
     private final org.modelmapper.ModelMapper mapper;
 
@@ -17,7 +17,7 @@ public class ModelMapper implements Converter<SourceModel,TargetModel> {
     }
 
     @Override
-    public TargetModel convert(SourceModel object) {
+    public TargetModel map(SourceModel object) {
         return mapper.map(object, TargetModel.class);
     }
 

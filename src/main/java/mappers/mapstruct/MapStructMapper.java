@@ -1,12 +1,11 @@
 package mappers.mapstruct;
 
-import common.converter.Converter;
+import common.mapper.Mapper;
 import common.model.SourceModel;
 import common.model.TargetModel;
-import org.mapstruct.Mapper;
 import org.mapstruct.factory.Mappers;
 
-@Mapper
-public interface MapStructMapper extends Converter<SourceModel, TargetModel> {
+@org.mapstruct.Mapper
+public interface MapStructMapper extends Mapper<SourceModel, TargetModel> {
     MapStructMapper MAPPER = Mappers.getMapper(MapStructMapper.class);
 }

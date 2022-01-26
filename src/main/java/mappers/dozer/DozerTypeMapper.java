@@ -1,14 +1,13 @@
 package mappers.dozer;
 
 import com.github.dozermapper.core.DozerBeanMapperBuilder;
-import com.github.dozermapper.core.Mapper;
-import common.converter.Converter;
+import common.mapper.Mapper;
 import common.model.conversion.SourceType;
 import common.model.conversion.TargetType;
 
-public class DozerTypeMapper implements Converter<SourceType, TargetType> {
+public class DozerTypeMapper implements Mapper<SourceType, TargetType> {
 
-    private final Mapper mapper;
+    private final com.github.dozermapper.core.Mapper mapper;
 
     public DozerTypeMapper() {
         this.mapper = DozerBeanMapperBuilder.create()
@@ -17,7 +16,7 @@ public class DozerTypeMapper implements Converter<SourceType, TargetType> {
     }
 
     @Override
-    public TargetType convert(SourceType object) {
+    public TargetType map(SourceType object) {
         return mapper.map(object, TargetType.class);
     }
 

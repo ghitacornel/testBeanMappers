@@ -13,7 +13,7 @@ public class TestModelMapper {
     @Test
     public void testMapping() {
         SourceModel sourceModel = Utils.sourceModel();
-        TargetModel targetModel = mapper.convert(sourceModel);
+        TargetModel targetModel = mapper.map(sourceModel);
         Utils.verify(sourceModel, targetModel);
     }
 }

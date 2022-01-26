@@ -13,7 +13,7 @@ public class TestModelMapperType {
     @Test
     public void testMapping() {
         SourceType sourceModel = Utils.sourceTypeConversion();
-        TargetType targetModel = mapper.convert(sourceModel);
+        TargetType targetModel = mapper.map(sourceModel);
         Utils.verify(sourceModel, targetModel);
     }
 
