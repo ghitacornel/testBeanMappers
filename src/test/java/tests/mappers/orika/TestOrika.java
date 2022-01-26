@@ -8,7 +8,7 @@ import org.junit.Ignore;
 import org.junit.Test;
 import tests.common.Utils;
 
-public class TestOrikaMapper {
+public class TestOrika {
 
     OrikaMapper mapper = new OrikaMapper();
 
