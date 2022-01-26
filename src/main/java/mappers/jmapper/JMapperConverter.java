@@ -6,7 +6,7 @@ import common.converter.Converter;
 import common.model.SourceModel;
 import common.model.TargetModel;
 
-public class JMapperConverter implements Converter {
+public class JMapperConverter implements Converter<SourceModel,TargetModel> {
 
     JMapper<TargetModel, SourceModel> mapperToTarget;
     JMapper<SourceModel, TargetModel> mapperToSource;
@@ -24,8 +24,4 @@ public class JMapperConverter implements Converter {
         return mapperToTarget.getDestination(sourceOrder);
     }
 
-    @Override
-    public SourceModel convert(TargetModel sourceCode) {
-        return mapperToSource.getDestination(sourceCode);
-    }
 }

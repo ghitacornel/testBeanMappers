@@ -6,7 +6,7 @@ import common.converter.Converter;
 import common.model.SourceModel;
 import common.model.TargetModel;
 
-public class DozerConverter implements Converter {
+public class DozerConverter implements Converter<SourceModel,TargetModel> {
 
     private final Mapper mapper;
 
@@ -19,11 +19,6 @@ public class DozerConverter implements Converter {
     @Override
     public TargetModel convert(SourceModel object) {
         return mapper.map(object, TargetModel.class);
-    }
-
-    @Override
-    public SourceModel convert(TargetModel object) {
-        return mapper.map(object, SourceModel.class);
     }
 
 }

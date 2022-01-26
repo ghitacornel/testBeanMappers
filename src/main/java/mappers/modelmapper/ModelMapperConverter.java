@@ -6,7 +6,7 @@ import common.model.TargetModel;
 import org.modelmapper.ModelMapper;
 import org.modelmapper.convention.MatchingStrategies;
 
-public class ModelMapperConverter implements Converter {
+public class ModelMapperConverter implements Converter<SourceModel,TargetModel> {
 
     private final ModelMapper modelMapper;
 
@@ -22,8 +22,4 @@ public class ModelMapperConverter implements Converter {
         return modelMapper.map(object, TargetModel.class);
     }
 
-    @Override
-    public SourceModel convert(TargetModel object) {
-        return modelMapper.map(object, SourceModel.class);
-    }
 }

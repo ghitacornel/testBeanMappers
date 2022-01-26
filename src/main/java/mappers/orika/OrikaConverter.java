@@ -8,7 +8,7 @@ import ma.glasnost.orika.MapperFacade;
 import ma.glasnost.orika.MapperFactory;
 import ma.glasnost.orika.impl.DefaultMapperFactory;
 
-public class OrikaConverter implements Converter {
+public class OrikaConverter implements Converter<SourceModel,TargetModel> {
 
     final private MapperFacade mapperFacade;
 
@@ -23,8 +23,4 @@ public class OrikaConverter implements Converter {
         return mapperFacade.map(sourceOrder, TargetModel.class);
     }
 
-    @Override
-    public SourceModel convert(TargetModel sourceCode) {
-        return mapperFacade.map(sourceCode, SourceModel.class);
-    }
 }
