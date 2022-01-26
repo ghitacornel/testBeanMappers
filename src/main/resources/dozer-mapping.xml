@@ -1,0 +1,18 @@
+<mappings xmlns="http://dozermapper.github.io/schema/bean-mapping"
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:schemaLocation="http://dozermapper.github.io/schema/bean-mapping
+  https://dozermapper.github.io/schema/bean-mapping.xsd">
+
+    <mapping>
+        <class-a>common.model.SourceModel</class-a>
+        <class-b>common.model.TargetModel</class-b>
+        <field>
+            <a>differentNameInSource</a>
+            <b>differentNameInTarget</b>
+        </field>
+        <field-exclude>
+            <a>doNotMap</a>
+            <b>doNotMap</b>
+        </field-exclude>
+    </mapping>
+</mappings>
