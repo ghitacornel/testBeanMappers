@@ -41,7 +41,7 @@ public class Utils {
     public static void verify(SourceTypeConversion source, TargetTypeConversion target) {
         Assert.assertEquals(source.getFieldInt1(), target.getFieldInt1().intValue());
         Assert.assertEquals(source.getFieldInt2() + "", target.getFieldInt2());
-        Assert.assertEquals(source.getFieldInteger1(), target.getFieldInteger1());
+        Assert.assertEquals(source.getFieldInteger1().intValue(), target.getFieldInteger1());
         Assert.assertEquals(source.getFieldInteger2() + "", target.getFieldInteger2());
     }
 }
