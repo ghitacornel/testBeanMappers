@@ -3,22 +3,22 @@ package mappers.dozer;
 import com.github.dozermapper.core.DozerBeanMapperBuilder;
 import com.github.dozermapper.core.Mapper;
 import common.converter.Converter;
-import common.model.SourceModel;
-import common.model.TargetModel;
+import common.model.conversion.SourceType;
+import common.model.conversion.TargetType;
 
-public class DozerConverter implements Converter<SourceModel,TargetModel> {
+public class DozerTypeMapper implements Converter<SourceType, TargetType> {
 
     private final Mapper mapper;
 
-    public DozerConverter() {
+    public DozerTypeMapper() {
         this.mapper = DozerBeanMapperBuilder.create()
                 .withMappingFiles("dozer-mapping.xml")
                 .build();
     }
 
     @Override
-    public TargetModel convert(SourceModel object) {
-        return mapper.map(object, TargetModel.class);
+    public TargetType convert(SourceType object) {
+        return mapper.map(object, TargetType.class);
     }
 
 }

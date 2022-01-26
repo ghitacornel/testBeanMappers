@@ -2,13 +2,13 @@ package tests.mappers.modelmapper;
 
 import common.model.conversion.SourceType;
 import common.model.conversion.TargetType;
-import mappers.modelmapper.ModelMapperTypeConverter;
+import mappers.modelmapper.ModelMapperType;
 import org.junit.Test;
 import tests.common.Utils;
 
-public class TestModelMapperTypeConverter  {
+public class TestModelMapperType {
 
-    ModelMapperTypeConverter mapper = new ModelMapperTypeConverter();
+    ModelMapperType mapper = new ModelMapperType();
 
     @Test
     public void testMapping() {

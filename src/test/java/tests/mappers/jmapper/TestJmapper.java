@@ -2,14 +2,14 @@ package tests.mappers.jmapper;
 
 import common.model.SourceModel;
 import common.model.TargetModel;
-import mappers.jmapper.JMapperConverter;
+import mappers.jmapper.JMapper;
 import org.junit.Ignore;
 import org.junit.Test;
 import tests.common.Utils;
 
 public class TestJmapper {
 
-    JMapperConverter mapper = new JMapperConverter();
+    JMapper mapper = new JMapper();
 
     @Test
     @Ignore

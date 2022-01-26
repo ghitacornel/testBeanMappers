@@ -8,19 +8,19 @@ import ma.glasnost.orika.MapperFacade;
 import ma.glasnost.orika.MapperFactory;
 import ma.glasnost.orika.impl.DefaultMapperFactory;
 
-public class OrikaConverter implements Converter<SourceModel,TargetModel> {
+public class OrikaMapper implements Converter<SourceModel, TargetModel> {
 
-    final private MapperFacade mapperFacade;
+    final private MapperFacade mapper;
 
-    public OrikaConverter() {
+    public OrikaMapper() {
         MapperFactory mapperFactory = new DefaultMapperFactory.Builder().build();
         mapperFactory.classMap(TargetModel.class, SourceModel.class).byDefault().register();
-        mapperFacade = mapperFactory.getMapperFacade();
+        mapper = mapperFactory.getMapperFacade();
     }
 
     @Override
     public TargetModel convert(SourceModel sourceOrder) {
-        return mapperFacade.map(sourceOrder, TargetModel.class);
+        return mapper.map(sourceOrder, TargetModel.class);
     }
 
 }

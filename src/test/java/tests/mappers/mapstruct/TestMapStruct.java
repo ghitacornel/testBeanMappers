@@ -2,14 +2,14 @@ package tests.mappers.mapstruct;
 
 import common.model.SourceModel;
 import common.model.TargetModel;
-import mappers.mapstruct.MapStructConverter;
+import mappers.mapstruct.MapStructMapper;
 import org.junit.Ignore;
 import org.junit.Test;
 import tests.common.Utils;
 
 public class TestMapStruct {
 
-    MapStructConverter mapper = MapStructConverter.MAPPER;
+    MapStructMapper mapper = MapStructMapper.MAPPER;
 
     @Test
     @Ignore

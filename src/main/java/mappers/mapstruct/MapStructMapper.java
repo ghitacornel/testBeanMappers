@@ -7,6 +7,6 @@ import org.mapstruct.Mapper;
 import org.mapstruct.factory.Mappers;
 
 @Mapper
-public interface MapStructConverter extends Converter<SourceModel, TargetModel> {
-    MapStructConverter MAPPER = Mappers.getMapper(MapStructConverter.class);
+public interface MapStructMapper extends Converter<SourceModel, TargetModel> {
+    MapStructMapper MAPPER = Mappers.getMapper(MapStructMapper.class);
 }

@@ -2,13 +2,13 @@ package tests.mappers.dozer;
 
 import common.model.SourceModel;
 import common.model.TargetModel;
-import mappers.dozer.DozerConverter;
+import mappers.dozer.DozerMapper;
 import org.junit.Test;
 import tests.common.Utils;
 
 public class TestDozer {
 
-    DozerConverter mapper = new DozerConverter();
+    DozerMapper mapper = new DozerMapper();
 
     @Test
     public void testMapping() {

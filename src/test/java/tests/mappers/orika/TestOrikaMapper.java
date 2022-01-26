@@ -3,14 +3,14 @@ package tests.mappers.orika;
 import common.model.SourceModel;
 import common.model.TargetModel;
 
-import mappers.orika.OrikaConverter;
+import mappers.orika.OrikaMapper;
 import org.junit.Ignore;
 import org.junit.Test;
 import tests.common.Utils;
 
-public class TestOrika {
+public class TestOrikaMapper {
 
-    OrikaConverter mapper = new OrikaConverter();
+    OrikaMapper mapper = new OrikaMapper();
 
     @Test
     @Ignore
