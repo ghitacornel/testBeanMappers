@@ -1,14 +1,14 @@
-package tests.mappers.dozer;
+package tests.mappers.modelmapper;
 
 import common.model.conversion.SourceTypeConversion;
 import common.model.conversion.TargetTypeConversion;
-import mappers.dozer.DozerTypeConverter;
+import mappers.modelmapper.ModelMapperTypeConverter;
 import org.junit.Test;
 import tests.common.Utils;
 
-public class TestDozerType {
+public class TestModelMapperTypeConverter  {
 
-    DozerTypeConverter mapper = new DozerTypeConverter();
+    ModelMapperTypeConverter mapper = new ModelMapperTypeConverter();
 
     @Test
     public void testMapping() {
@@ -16,4 +16,5 @@ public class TestDozerType {
         TargetTypeConversion targetModel = mapper.convert(sourceModel);
         Utils.verify(sourceModel, targetModel);
     }
+
 }

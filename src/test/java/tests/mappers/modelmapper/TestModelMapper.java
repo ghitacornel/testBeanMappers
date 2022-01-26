@@ -8,12 +8,12 @@ import tests.common.Utils;
 
 public class TestModelMapper {
 
-    ModelMapperConverter converter = new ModelMapperConverter();
+    ModelMapperConverter mapper = new ModelMapperConverter();
 
     @Test
     public void testMapping() {
         SourceModel sourceModel = Utils.sourceModel();
-        TargetModel targetModel = converter.convert(sourceModel);
+        TargetModel targetModel = mapper.convert(sourceModel);
         Utils.verify(sourceModel, targetModel);
     }
 }
