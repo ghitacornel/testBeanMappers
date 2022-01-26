@@ -35,6 +35,8 @@ public class Utils {
         source.setFieldInt2(2);
         source.setFieldInteger1(3);
         source.setFieldInteger2(4);
+        source.setFieldStringInteger1("5");
+        source.setFieldStringInteger2("6");
         return source;
     }
 
@@ -43,5 +45,9 @@ public class Utils {
         Assert.assertEquals(source.getFieldInt2() + "", target.getFieldInt2());
         Assert.assertEquals(source.getFieldInteger1().intValue(), target.getFieldInteger1());
         Assert.assertEquals(source.getFieldInteger2() + "", target.getFieldInteger2());
+        Assert.assertEquals(source.getFieldStringInteger1(), target.getFieldStringInteger1() + "");
+        Assert.assertEquals(source.getFieldStringInteger2(), String.valueOf(target.getFieldStringInteger2()));
+        Assert.assertNull(target.getFieldStringIntegerNull());// is set to null
+        Assert.assertEquals(-1, target.getFieldStringIntNull());// remains unmodified
     }
 }
