@@ -10,13 +10,13 @@ import tests.common.Utils;
 
 public class TestOrika {
 
-    OrikaConverter converter = new OrikaConverter();
+    OrikaConverter mapper = new OrikaConverter();
 
     @Test
     @Ignore
     public void testMapping() {
         SourceModel sourceModel = Utils.sourceModel();
-        TargetModel targetModel = converter.convert(sourceModel);
+        TargetModel targetModel = mapper.convert(sourceModel);
         Utils.verify(sourceModel, targetModel);
     }
 }

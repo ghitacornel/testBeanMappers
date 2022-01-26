@@ -2,8 +2,8 @@ package tests.common;
 
 import common.model.SourceModel;
 import common.model.TargetModel;
-import common.model.conversion.SourceTypeConversion;
-import common.model.conversion.TargetTypeConversion;
+import common.model.conversion.SourceType;
+import common.model.conversion.TargetType;
 import org.junit.Assert;
 
 public class Utils {
@@ -29,8 +29,8 @@ public class Utils {
         Assert.assertSame(source.getFieldString(), target.getFieldString());
     }
 
-    public static SourceTypeConversion sourceTypeConversion() {
-        SourceTypeConversion source = new SourceTypeConversion();
+    public static SourceType sourceTypeConversion() {
+        SourceType source = new SourceType();
         source.setFieldInt1(1);
         source.setFieldInt2(2);
         source.setFieldInteger1(3);
@@ -40,7 +40,7 @@ public class Utils {
         return source;
     }
 
-    public static void verify(SourceTypeConversion source, TargetTypeConversion target) {
+    public static void verify(SourceType source, TargetType target) {
         Assert.assertEquals(source.getFieldInt1(), target.getFieldInt1().intValue());
         Assert.assertEquals(source.getFieldInt2() + "", target.getFieldInt2());
         Assert.assertEquals(source.getFieldInteger1().intValue(), target.getFieldInteger1());

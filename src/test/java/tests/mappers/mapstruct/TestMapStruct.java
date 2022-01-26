@@ -9,13 +9,13 @@ import tests.common.Utils;
 
 public class TestMapStruct {
 
-    MapStructConverter converter = MapStructConverter.MAPPER;
+    MapStructConverter mapper = MapStructConverter.MAPPER;
 
     @Test
     @Ignore
     public void testMapping() {
         SourceModel sourceModel = Utils.sourceModel();
-        TargetModel targetModel = converter.convert(sourceModel);
+        TargetModel targetModel = mapper.convert(sourceModel);
         Utils.verify(sourceModel, targetModel);
     }
 }
