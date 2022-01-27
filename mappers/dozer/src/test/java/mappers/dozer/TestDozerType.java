@@ -11,7 +11,7 @@ public class TestDozerType {
 
     @Test
     public void testMapping() {
-        SourceType sourceModel = Utils.sourceTypeConversion();
+        SourceType sourceModel = SourceType.sourceType();
         TargetType targetModel = mapper.map(sourceModel);
         Utils.verify(sourceModel, targetModel);
     }

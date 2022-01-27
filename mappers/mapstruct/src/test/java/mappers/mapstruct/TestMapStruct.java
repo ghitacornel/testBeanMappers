@@ -11,7 +11,7 @@ public class TestMapStruct {
 
     @Test
     public void testMapping() {
-        SourceModel sourceModel = Utils.sourceModel();
+        SourceModel sourceModel = SourceModel.sourceModel();
         TargetModel targetModel = mapper.map(sourceModel);
         Utils.verify(sourceModel, targetModel);
     }
