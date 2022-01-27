@@ -9,9 +9,9 @@ import org.junit.Assert;
 public class Utils {
 
     public static void verify(SourceModel source, TargetModel target) {
-        Assert.assertEquals(-1000, target.getDoNotExistsInSource());
-        Assert.assertEquals("doNotMap target", target.getDoNotMap());
-        Assert.assertEquals(source.getDifferentNameInSource(), target.getDifferentNameInTarget());
+        Assert.assertEquals(-4, target.getDoNotExistsInSource());
+        Assert.assertEquals("doNotMap source", target.getDoNotMap());
+        Assert.assertEquals("-6", target.getDifferentNameInTarget());
 
         Assert.assertEquals(source.getFieldInt(), target.getFieldInt());
         Assert.assertSame(source.getFieldInteger(), target.getFieldInteger());

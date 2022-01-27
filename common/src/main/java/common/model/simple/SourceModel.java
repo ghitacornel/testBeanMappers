@@ -10,13 +10,13 @@ public class SourceModel {
     private String fieldString;
 
     // field not existing in target and not mapped
-    private int doNotExistsInTarget = 1000;
+    private int doNotExistsInTarget;
 
     // field existing in source and target which must not be mapped
-    private String doNotMap = "doNotMap source";
+    private String doNotMap;
 
     // field with different name
-    private String differentNameInSource = "must be mapped to same value";
+    private String differentNameInSource;
 
     public static SourceModel sourceModel() {
         SourceModel model = new SourceModel();
