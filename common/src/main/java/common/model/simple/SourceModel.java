@@ -20,11 +20,12 @@ public class SourceModel {
 
     public static SourceModel sourceModel() {
         SourceModel model = new SourceModel();
-        model.setDoNotMap("doNotMap source");
-        model.setDoNotExistsInTarget(1001);
         model.setFieldInt(1);
         model.setFieldInteger(2);
         model.setFieldString("fieldString");
+        model.setDoNotExistsInTarget(1001);
+        model.setDoNotMap("doNotMap source");
+        model.setDifferentNameInSource("setDifferentNameInSource");
         return model;
     }
 }
