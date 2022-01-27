@@ -13,6 +13,9 @@ public class TestMapStructType {
     public void testMapping() {
         SourceType sourceModel = SourceType.input();
         TargetType targetModel = mapper.map(sourceModel);
-        Assert.assertEquals(TargetType.expected(), targetModel);
+
+        TargetType expected = TargetType.expected();
+        expected.setField9("1981-10-05");
+        Assert.assertEquals(expected, targetModel);
     }
 }

@@ -13,6 +13,7 @@ public class TargetType {
     private Integer field6;
     private Integer field7;
     private int field8;
+    private String field9;
 
     public static TargetType expected() {
         TargetType model = new TargetType();
@@ -24,6 +25,7 @@ public class TargetType {
         model.setField6(6);
         model.setField7(null);
         model.setField8(0);
+        model.setField9("Mon Oct 05 02:00:00 EET 1981");
         return model;
     }
 }
