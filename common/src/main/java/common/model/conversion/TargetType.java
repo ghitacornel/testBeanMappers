@@ -14,7 +14,7 @@ public class TargetType {
     private Integer field7;
     private int field8;
 
-    public static TargetType targetType() {
+    public static TargetType expected() {
         TargetType model = new TargetType();
         model.setField1(1);
         model.setField2("2");

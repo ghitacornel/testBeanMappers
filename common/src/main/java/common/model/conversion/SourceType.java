@@ -14,7 +14,7 @@ public class SourceType {
     private String field7;
     private String field8;
 
-    public static SourceType sourceType() {
+    public static SourceType input() {
         SourceType model = new SourceType();
         model.setField1(1);
         model.setField2(2);

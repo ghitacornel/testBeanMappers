@@ -21,7 +21,7 @@ public class TargetModel {
     /**
      * @return expected mapped value
      */
-    public static TargetModel targetModel() {
+    public static TargetModel expected() {
         TargetModel model = new TargetModel();
         model.setFieldInt(1);
         model.setFieldInteger(2);

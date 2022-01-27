@@ -18,7 +18,7 @@ public class SourceModel {
     // field with different name
     private String differentNameInSource;
 
-    public static SourceModel sourceModel() {
+    public static SourceModel input() {
         SourceModel model = new SourceModel();
         model.setFieldInt(1);
         model.setFieldInteger(2);

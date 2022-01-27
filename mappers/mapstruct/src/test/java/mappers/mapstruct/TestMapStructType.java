@@ -11,8 +11,8 @@ public class TestMapStructType {
 
     @Test
     public void testMapping() {
-        SourceType sourceModel = SourceType.sourceType();
+        SourceType sourceModel = SourceType.input();
         TargetType targetModel = mapper.map(sourceModel);
-        Assert.assertEquals(TargetType.targetType(), targetModel);
+        Assert.assertEquals(TargetType.expected(), targetModel);
     }
 }

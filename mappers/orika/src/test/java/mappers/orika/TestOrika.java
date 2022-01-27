@@ -11,8 +11,8 @@ public class TestOrika {
 
     @Test
     public void testMapping() {
-        SourceModel sourceModel = SourceModel.sourceModel();
+        SourceModel sourceModel = SourceModel.input();
         TargetModel targetModel = mapper.map(sourceModel);
-        Assert.assertEquals(TargetModel.targetModel(), targetModel);
+        Assert.assertEquals(TargetModel.expected(), targetModel);
     }
 }
