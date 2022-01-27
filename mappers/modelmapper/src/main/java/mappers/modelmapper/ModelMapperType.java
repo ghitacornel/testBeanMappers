@@ -14,7 +14,7 @@ public class ModelMapperType implements Mapper<SourceType, TargetType> {
     public ModelMapperType() {
         mapper = new ModelMapper();
         mapper.getConfiguration().setMatchingStrategy(MatchingStrategies.STRICT);
-        mapper.typeMap(SourceType.class, TargetType.class).addMappings(mapper -> mapper.when(Conditions.isNull()).skip(SourceType::getFieldStringIntNull, TargetType::setFieldStringIntNull));
+        mapper.typeMap(SourceType.class, TargetType.class).addMappings(mapper -> mapper.when(Conditions.isNull()).skip(SourceType::getField8, TargetType::setField8));
     }
 
     @Override

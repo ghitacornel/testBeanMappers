@@ -5,13 +5,25 @@ import lombok.Data;
 @Data
 public class TargetType {
 
-    private Integer fieldInt1;
-    private String fieldInt2;
-    private int fieldInteger1;
-    private String fieldInteger2;
-    private int fieldStringInteger1;
-    private Integer fieldStringInteger2;
-    private Integer fieldStringIntegerNull = -1;
-    private int fieldStringIntNull = -1;
+    private Integer field1;
+    private String field2;
+    private int field3;
+    private String field4;
+    private int field5;
+    private Integer field6;
+    private Integer field7;
+    private int field8;
 
+    public static TargetType targetType() {
+        TargetType model = new TargetType();
+        model.setField1(1);
+        model.setField2("2");
+        model.setField3(3);
+        model.setField4("4");
+        model.setField5(5);
+        model.setField6(6);
+        model.setField7(null);
+        model.setField8(0);
+        return model;
+    }
 }

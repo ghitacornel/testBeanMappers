@@ -1,8 +1,8 @@
 package mappers.dozer;
 
-import common.Utils;
 import common.model.conversion.SourceType;
 import common.model.conversion.TargetType;
+import org.junit.Assert;
 import org.junit.Test;
 
 public class TestDozerType {
@@ -13,6 +13,6 @@ public class TestDozerType {
     public void testMapping() {
         SourceType sourceModel = SourceType.sourceType();
         TargetType targetModel = mapper.map(sourceModel);
-        Utils.verify(sourceModel, targetModel);
+        Assert.assertEquals(TargetType.targetType(), targetModel);
     }
 }

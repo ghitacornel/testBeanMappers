@@ -5,23 +5,25 @@ import lombok.Data;
 @Data
 public class SourceType {
 
-    private int fieldInt1;
-    private int fieldInt2;
-    private Integer fieldInteger1;
-    private Integer fieldInteger2;
-    private String fieldStringInteger1;
-    private String fieldStringInteger2;
-    private String fieldStringIntegerNull;
-    private String fieldStringIntNull;
+    private int field1;
+    private int field2;
+    private Integer field3;
+    private Integer field4;
+    private String field5;
+    private String field6;
+    private String field7;
+    private String field8;
 
     public static SourceType sourceType() {
-        SourceType source = new SourceType();
-        source.setFieldInt1(1);
-        source.setFieldInt2(2);
-        source.setFieldInteger1(3);
-        source.setFieldInteger2(4);
-        source.setFieldStringInteger1("5");
-        source.setFieldStringInteger2("6");
-        return source;
+        SourceType model = new SourceType();
+        model.setField1(1);
+        model.setField2(2);
+        model.setField3(3);
+        model.setField4(4);
+        model.setField5("5");
+        model.setField6("6");
+        model.setField7(null);
+        model.setField8(null);
+        return model;
     }
 }

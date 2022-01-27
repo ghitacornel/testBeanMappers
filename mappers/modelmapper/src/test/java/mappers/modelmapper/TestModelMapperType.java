@@ -1,8 +1,8 @@
 package mappers.modelmapper;
 
-import common.Utils;
 import common.model.conversion.SourceType;
 import common.model.conversion.TargetType;
+import org.junit.Assert;
 import org.junit.Test;
 
 public class TestModelMapperType {
@@ -13,7 +13,7 @@ public class TestModelMapperType {
     public void testMapping() {
         SourceType sourceModel = SourceType.sourceType();
         TargetType targetModel = mapper.map(sourceModel);
-        Utils.verify(sourceModel, targetModel);
+        Assert.assertEquals(TargetType.targetType(), targetModel);
     }
 
 }
