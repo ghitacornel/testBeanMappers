@@ -13,7 +13,11 @@ public class ModelMapper implements Mapper<SourceModel,TargetModel> {
         mapper = new org.modelmapper.ModelMapper();
         mapper.getConfiguration().setMatchingStrategy(MatchingStrategies.STRICT);
         mapper.typeMap(SourceModel.class, TargetModel.class).addMappings(e -> e.skip(TargetModel::setDoNotMap));
+        mapper.typeMap(SourceModel.class, TargetModel.class).addMappings(e -> e.skip(TargetModel::setDoNotExistsInSource));
         mapper.typeMap(SourceModel.class, TargetModel.class).addMappings(e -> e.map(SourceModel::getDifferentNameInSource, TargetModel::setDifferentNameInTarget));
+
+        // auto validation !!! really nice
+        mapper.validate();
     }
 
     @Override
