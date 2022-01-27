@@ -2,8 +2,8 @@ package mappers.jmapper;
 
 import com.googlecode.jmapper.api.JMapperAPI;
 import common.mapper.Mapper;
-import common.model.SourceModel;
-import common.model.TargetModel;
+import common.model.simple.SourceModel;
+import common.model.simple.TargetModel;
 
 public class JMapper implements Mapper<SourceModel, TargetModel> {
 

@@ -1,8 +1,8 @@
 package orika;
 
 import common.Utils;
-import common.model.SourceModel;
-import common.model.TargetModel;
+import common.model.simple.SourceModel;
+import common.model.simple.TargetModel;
 import mappers.orika.OrikaMapper;
 import org.junit.Test;
 

@@ -1,8 +1,8 @@
 package mappers.modelmapper;
 
 import common.mapper.Mapper;
-import common.model.SourceModel;
-import common.model.TargetModel;
+import common.model.simple.SourceModel;
+import common.model.simple.TargetModel;
 import org.modelmapper.convention.MatchingStrategies;
 
 public class ModelMapper implements Mapper<SourceModel,TargetModel> {

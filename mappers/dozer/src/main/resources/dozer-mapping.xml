@@ -4,8 +4,8 @@
   https://dozermapper.github.io/schema/bean-mapping.xsd">
 
     <mapping>
-        <class-a>common.model.SourceModel</class-a>
-        <class-b>common.model.TargetModel</class-b>
+        <class-a>common.model.simple.SourceModel</class-a>
+        <class-b>common.model.simple.TargetModel</class-b>
         <field>
             <a>differentNameInSource</a>
             <b>differentNameInTarget</b>

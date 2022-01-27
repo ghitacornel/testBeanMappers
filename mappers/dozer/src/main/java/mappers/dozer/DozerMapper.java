@@ -2,8 +2,8 @@ package mappers.dozer;
 
 import com.github.dozermapper.core.DozerBeanMapperBuilder;
 import common.mapper.Mapper;
-import common.model.SourceModel;
-import common.model.TargetModel;
+import common.model.simple.SourceModel;
+import common.model.simple.TargetModel;
 
 public class DozerMapper implements Mapper<SourceModel,TargetModel> {
 

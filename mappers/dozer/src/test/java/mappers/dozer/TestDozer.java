@@ -1,8 +1,8 @@
 package mappers.dozer;
 
 import common.Utils;
-import common.model.SourceModel;
-import common.model.TargetModel;
+import common.model.simple.SourceModel;
+import common.model.simple.TargetModel;
 import org.junit.Test;
 
 public class TestDozer {

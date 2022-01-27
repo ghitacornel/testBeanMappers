@@ -1,8 +1,8 @@
 package mappers.mapstruct;
 
 import common.mapper.Mapper;
-import common.model.SourceModel;
-import common.model.TargetModel;
+import common.model.simple.SourceModel;
+import common.model.simple.TargetModel;
 import org.mapstruct.factory.Mappers;
 
 @org.mapstruct.Mapper

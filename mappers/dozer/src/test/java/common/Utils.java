@@ -1,7 +1,7 @@
 package common;
 
-import common.model.SourceModel;
-import common.model.TargetModel;
+import common.model.simple.SourceModel;
+import common.model.simple.TargetModel;
 import common.model.conversion.SourceType;
 import common.model.conversion.TargetType;
 import org.junit.Assert;
