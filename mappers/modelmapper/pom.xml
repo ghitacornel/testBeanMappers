@@ -12,6 +12,8 @@
     <artifactId>modelmapper</artifactId>
     <dependencies>
 
+        <!-- xml based + reflection based -->
+        <!-- NO GO due to mapping done through reflection -->
         <dependency>
             <groupId>org.modelmapper</groupId>
             <artifactId>modelmapper</artifactId>

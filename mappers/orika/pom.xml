@@ -14,7 +14,7 @@
     <dependencies>
 
         <!-- issues with java 17 -->
-        <!-- NO GO -->
+        <!-- NO GO for now -->
         <dependency>
             <groupId>ma.glasnost.orika</groupId>
             <artifactId>orika-core</artifactId>

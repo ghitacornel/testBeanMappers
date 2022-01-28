@@ -14,7 +14,7 @@
     <dependencies>
 
         <!-- xml based + reflection based -->
-        <!-- works, but NO GO -->
+        <!-- NO GO due to mapping done through reflection -->
         <dependency>
             <groupId>com.github.dozermapper</groupId>
             <artifactId>dozer-core</artifactId>

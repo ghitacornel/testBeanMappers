@@ -14,7 +14,7 @@
     <dependencies>
 
         <!-- issues with java 17 -->
-        <!-- NO GO -->
+        <!-- NO GO for now -->
         <dependency>
             <groupId>com.googlecode.jmapper-framework</groupId>
             <artifactId>jmapper-core</artifactId>

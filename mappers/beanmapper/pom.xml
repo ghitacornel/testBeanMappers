@@ -13,6 +13,8 @@
 
     <dependencies>
 
+        <!-- annotations on model -->
+        <!-- NO GO due to needed annotations on input/output model -->
         <dependency>
             <groupId>io.beanmapper</groupId>
             <artifactId>beanmapper</artifactId>

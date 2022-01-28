@@ -15,6 +15,7 @@
 
         <!-- needs maven plugin -->
         <!-- generates code -->
+        <!-- generated code can be consulted -->
         <dependency>
             <groupId>org.mapstruct</groupId>
             <artifactId>mapstruct</artifactId>
