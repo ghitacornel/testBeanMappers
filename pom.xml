@@ -10,12 +10,13 @@
     <version>1.0-SNAPSHOT</version>
 
     <modules>
+        <module>common</module>
         <module>mappers/dozer</module>
         <module>mappers/jmapper</module>
         <module>mappers/mapstruct</module>
         <module>mappers/modelmapper</module>
         <module>mappers/orika</module>
-        <module>common</module>
+        <module>mappers/beanmapper</module>
     </modules>
 
     <properties>
