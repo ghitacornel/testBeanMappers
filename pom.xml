@@ -11,12 +11,12 @@
 
     <modules>
         <module>common</module>
-        <module>mappers/dozer</module>
-        <module>mappers/jmapper</module>
-        <module>mappers/mapstruct</module>
-        <module>mappers/modelmapper</module>
-        <module>mappers/orika</module>
-        <module>mappers/beanmapper</module>
+        <module>dozer</module>
+        <module>jmapper</module>
+        <module>mapstruct</module>
+        <module>modelmapper</module>
+        <module>orika</module>
+        <module>beanmapper</module>
     </modules>
 
     <properties>
@@ -37,7 +37,7 @@
         <dependency>
             <groupId>org.slf4j</groupId>
             <artifactId>slf4j-simple</artifactId>
-            <version>1.7.33</version>
+            <version>1.7.35</version>
         </dependency>
 
         <!-- test dependencies -->
